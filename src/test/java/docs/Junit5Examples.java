@@ -10,12 +10,12 @@ public class Junit5Examples {
 
     @BeforeEach
     void each() {
-        System.out.println("Before each here");
+        System.out.println("    Before each here");
     }
 
     @AfterEach
     void   afterEach() {
-        System.out.println("After each here");
+        System.out.println("    After each here");
     }
 
     @AfterAll
@@ -25,11 +25,11 @@ public class Junit5Examples {
 
     @Test
     void someTest() {
-        System.out.println("someTest here");
+        System.out.println("        someTest here");
     }
 
     @Test
     void anotherTest() {
-        System.out.println("anotherTest there");
+        System.out.println("        anotherTest there");
     }
 }
