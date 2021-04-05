@@ -1,8 +1,6 @@
 package docs;
 
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class Junit5Examples {
     @BeforeAll
@@ -12,7 +10,17 @@ public class Junit5Examples {
 
     @BeforeEach
     void each() {
-        System.out.println("each here");
+        System.out.println("Before each here");
+    }
+
+    @AfterEach
+    void   afterEach() {
+        System.out.println("After each here");
+    }
+
+    @AfterAll
+    static void shutdown() {
+        System.out.println("afterall here");
     }
 
     @Test
